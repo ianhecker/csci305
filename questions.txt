@@ -1,0 +1,55 @@
+Your name
+CSCI-305
+
+10. Titles get stuck in a three word loop of popular contractions and another
+word such as: "for you ready", "of the world"
+Words like "Taxi" however do work for a non-repeating title
+
+14. Titles devolve into repeating patterns because some words are used after
+another specific word so often, it creates a pattern of cyclical reference. For
+example, with the word "world", it appears after "the" most commonly, "the"
+appearing most commonly after "of" (which is extremely common), and the word
+"of" appearing after "world".
+
+15. que te quiero ser feliz navidad negra tomasa
+    cyanide inhaler
+    molar extractor
+    beanie sigel
+    bean dubh ghleanna
+
+16. I made a simple addition to my construct_title method. In the method, it now
+checks of the word it is attempting to add is already in the title. If this is true,
+I return the new title as-is. I realize this does not create the longest titles,
+but otherwise i would have to add an additional method that would find, perhaps,
+the second most common following word.
+
+Creating another method to search for the second most common following word would
+not be difficult, but there would be more logic involved, and more testing required.
+And unfortunately I have for other classes to do homework for atm and two exams this
+week this lab is due, so i've chosen the easier route due to time constraints. cheers
+
+19. Depending on the chance of getting a randomly-chosen following word after "bob",
+the created titles can differ in construction. Multiple outputs are therefore possible,
+limited only by how many words are tied for occurring after "bob"
+
+20. Favorite title
+    nose job shove it up your love
+
+21. I love Ruby's freedom from confined syntax, unlike java. Ruby feels more powerful
+as well, maybe because it is easier to perform tasks since there are more ways to do so?
+
+22. Ruby is honestly my fav language now, I'm digging it alot, so i dont have any
+negatives about it (as of now; im sure i will later curse the Ruby gods)
+
+23. I love manipulating data such as strings, this lab was actually really fun. I
+really enjoyed the "million song title" aspect and the totally random strings you
+could sometimes construct. However, with a million song titles each with their own
+strings, I'm anxious to how this will be graded as it has proven very difficult to
+achieve exact results to tests. Especially since Ruby is new to me, as well as
+regex, nested hash tables, and manipulating data of this size. 
+
+24. Between 20-25 hours of work on this code, conservatively.
+
+25. Oh yeah, I would love to use Ruby again on any and all projects. Java is now
+old-hat, goodbye semi-colons and curly brackets. For specifically projects requiring
+data manipulation, file IO, or just random small tinkering projects
