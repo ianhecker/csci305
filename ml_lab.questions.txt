@@ -1,0 +1,57 @@
+<Ian> <Hecker>
+CSCI 305
+Spring 2018
+Lab Questions
+=======================
+1. The function outputs [4, 2, 5, 2, 6, 10].
+
+2.The function f either returns an empty list for an empty list input, or
+recursively calls itself and adds one to each number in the list.
+
+3. (a) is the base case and exits the recursive call when the list is empty
+and calls itself with an empty list.
+
+4. (b) is the recursion. It uses 'x::xs' to differentiate if the list is not empty.
+x binds to the head of the list and xs is the tail. the head is incremented by 1 and
+added concatenated to the beginning of a list, and then the function is called again
+with the rest of the list minus the head. This continues until an empty list is called
+with the function.
+
+5. false
+
+6. My isMember function uses head recursion because it looks at the beginning of a list,
+and then immediately checks to see if it matches e, the element it is looking for and will
+quit then and there if it matches.
+
+7. it was the best of times worst
+
+8. Tail recursion is when method calls stack up and the very last call must be evaluated
+before any evaluation can occur. Adding up a list of integers by their index and using
+index 0 as the base case to where it stops is an example of this, as the function must
+go all the way from the highest to the lowest index, and then add index 0 and index 1,
+and then index (0+1) and index 2, etc. Tail recursion can have the benefit of only requiring
+one stack call; this is because some tail recursive calls do not need to know what a previous
+variable was, and can therefore save space when compiling.
+https://stackoverflow.com/questions/19854007/what-is-the-advantage-of-using-tail-recursion-here
+
+9. and eggs green ham
+
+10. macaroni and
+
+11. The way ML strongly pushes you to do recursion and alter thought process was interesting!
+Thinking in this way i normally dont was very frustrating but addicting later on.
+
+12. ML functions require you to write very concisely. This proved frustrating because ML
+seems to require users to know very specific "ML ways" to do things and limits possible
+coding avenues to answer problems. Ruby seemed the opposite of this, with many ways to do things.
+
+13. It was frustrating at first! But later on i enjoyed the puzzles it gave me. Not as fun as the
+Ruby lab. ML's recursion was fun, i dont normally use it. Liked the topic of sets ALOT,
+(the nerd in me) Did not like ML's finicky way with parenthesis. There were lots of times where
+putting parenthesis for clarification actually caused errors.
+
+14. 20 hours
+
+15. ehhhh no probably not. But the recursion-heavy functions might be fun to play with if i get
+bored. ML would be great for sorting like Mergesort/Quicksort and optimizing searches with
+recursion.
