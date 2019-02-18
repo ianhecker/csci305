@@ -1,0 +1,87 @@
+1) LastPlayBot: I implemented the strategy of using the opponent's last 
+move as this bot's next move by creating a void method setLastPlay().
+This method is called after a duel by the two players and sets LastPlayBot's
+next move to the opponent's previous move.
+Additionally, a hash table called bots, was created in Main to save the 
+instances of bots, allowing this method to update a previously existing 
+LastPlayBot rather than a new bot. It goes a bit beyond by choosing a 
+random first move as instructions stated an "arbitrary first move" was 
+allowed.
+----------------------------------------------------------------------
+2) MyBot: This bot will take the opponent's last move, and returns one of
+either of the two moves that would beat it for the next move. For example, 
+an opponent playing "Rock" would cause MyBot to play either "Paper" or 
+"Spock" the next round. This applies to all five possible moves. It also 
+choses a random first move.
+This was accomplished by using the same strategy as LastPlayBot, and then 
+randomly selecting and int of 0 or 1, which each leads to a possible 
+countermove in a switch statement.
+-----------------------------------------------------------------------
+3) ~Java type system~
+binding time: defined as "the point at which the association bewtween an
+			  entity and an attribute takes place". It can occur during: 
++Design Time  (ex: operations of the String class)
++Compile Time (ex: binding variables to types during program compiling)
++Link Time    (ex: global & static variables are bound to addresses when
+				code is made into a full program)
++Run Time     (ex: values being bound to variables at runtime)
+http://cs.umw.edu/~finlayson/class/fall13/cpsc401/notes/05-binding-scope.html
+
+dynamic vs static typing: 
++Dynamic languages check typing at runtime. This allows flexibility but 
+can cause errors while the program runs that prevent it from working
+properly.
++Static languages check at compile time, and require you to declare types
+as you write them in code. This is less flexible but prevents errors
+during program executing
+Java is a static language.
+https://docs.oracle.com/cd/E57471_01/bigData.100/extensions_bdd/src/cext_transform_typing.html
+
+strong vs weak typing:
++Strong typing languages have types that cannot be changed. Benefits are 
+that programs are forced to be explicit.
++Weak typing has values that are able to be manipulated and changed and 
+offer greater flexibility. 
+Java is a strongly typed language.
+http://wiki.c2.com/?WeakAndStrongTyping
+
+user-defined types (classes):
+These are classes the user defines that can contain other user-defined
+types along with primitive types like byte, int, or char.
+https://stackoverflow.com/questions/30867364/user-defined-data-types-in-java
+----------------------------------------------------------------------
+4) MyBot will always beat StupidBot. StupidBot sometimes manages to beat
+RandomBot. LastPlayBot will sometimes win, tie, or lose to StupidBot because
+of its random first move selection.
+After playing for awhile, the only bot that is hard to consistently beat
+is the random bot. All other bots follow a pattern and are predictable.
+Random bot wins about half the time. MyBot takes measures to win but follows
+a pattern of choosing superior moves of the player's last move
+----------------------------------------------------------------------
+5) As information on what your opponent will play is "imperfect" 
+(no way of knowing for sure what they will play) there is no algorithm
+that will consistently win over others. However, if a player is known to 
+use the element "Rock" often, then strategy could be employed to play moves
+that would beat "Rock". The normal-form chart you can make of all possible
+moves does not show a strategy that would help best an opponent that 
+utilizes strictly randomness. Humans show predictability though, 
+and perhaps an alogrithm could record an opponent's moves and search for 
+predictability of next moves based on most used and least used moves, and 
+opponent moves used as counters when the opponent either won or lost.
+----------------------------------------------------------------------
+6) I like Java's strong typing and static language characteristic. Ruby
+was fun in its flexibility but i like to make explicit instructions to help
+me avoid errors.
+----------------------------------------------------------------------
+7) I dislike Java's way to take input from users. It feels clunky and
+nowhere near as smooth and easy as Ruby.
+----------------------------------------------------------------------
+8) I loved this lab! i enjoyed the "game" aspect and the ability to code
+how i wanted. Ruby's lab was strict on code structure and i like to be
+creative.
+----------------------------------------------------------------------
+9) 15 hours. Mostly coded in one day, with a few days of reading/thinking
+----------------------------------------------------------------------
+10) Java is my best language. I have used it since Freshman year in college.
+I took Java 111, and usde Java in both basic and normal data structures, and
+software engineering.
